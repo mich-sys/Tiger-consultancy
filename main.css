@@ -1,0 +1,419 @@
+/* -color-footer : #031B34;
+  --color-blog: #042c54;
+  --color-text: #81AFDD;
+  --color-subtext: #FF8A71;
+   */
+   html {
+    margin: 0;
+    padding: 0;
+   }
+body {
+  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(97, 157, 226, 0.5));
+
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.logs {
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+  float: left;
+}
+
+.image{
+  height: 11vh;
+  min-width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: rgb(111, 111, 240) ;
+  border-bottom: 2px solid #002060;
+}
+.title {
+  padding-left: 5px;
+  float: left;
+  font-size: 15px;
+}
+.title h1 {
+  color: #042c54;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+.title p {
+  color: #031B34;
+  margin-top: 0;
+  padding-left: 10px;
+}
+.navbar {
+  cursor: pointer;
+}
+.navbar ul {
+  margin-top: 2%;
+  padding-left: 600px;
+}
+.navbar li {
+  display: inline;
+  padding-left: 20px;
+}
+
+ li>a {
+  text-decoration: none;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  color: antiquewhite;
+}
+
+#carousel {
+  width: 50%;
+  overflow: hidden;
+  margin-left: 350px;
+  
+}
+
+#carousel img {
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+#btn-top{
+  float: right;
+}
+
+.btn2{
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  padding-right: 5px;
+  background-color:rgba(104, 132, 160, 0.459);
+  border-top: #042c54;
+  font-family:'Arial', Helvetica, sans-serif;
+  border-radius: 12px;
+  width: 70px;
+  text-shadow: #333;
+  box-shadow: #031B34;
+}
+
+.btn2:hover{
+  background-color: #e7ecf0;
+transition: all 300ms ease;
+}
+
+.whatsapp img{
+  float: left;
+}
+.whatsapp p{
+  margin-left: 7px;
+  padding-top:6px;
+}
+
+.footer p{
+  margin-left: 630px;
+}
+
+
+.whatsapp{
+  margin-left: 610px;
+}
+
+/* to be done under media query   */
+
+.menubar{
+  visibility: hidden;
+  display: block;
+}
+.navbar li>:hover {
+  color:#042c54;
+  font-weight:bolder;
+  text-decoration: none;
+  transition: 0.5s;
+}
+ h1{
+  color: #031B34;
+
+ }
+
+
+
+ .break {
+  min-height: 11vh;
+ }
+
+
+  /* Menubar Styling */
+
+  .container {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+
+  .change .bar2 {
+    opacity: 0;
+  }
+
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+  .men {
+    visibility: hidden;
+  }
+
+  /* who we are */
+  .wlc {
+    text-align: center;
+  }
+  .wlc h1 {
+    font-family: 'Cambria', Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+    font-size: 50px;
+    margin-bottom: 15px;
+  }
+  .wlc p {
+    color: #031B34;
+    font-size: 18px;
+    font-weight: 500px;
+  margin-top: 0;
+  padding-left: 10px;
+  text-align: left;
+
+  }
+.br{
+  visibility: hidden;
+}
+
+.form{
+  /* display: block; */
+  width: 35vw;
+  text-align: center;
+  margin: 0 auto 0 auto; 
+}
+label {
+  display: block;
+  margin: 0 auto 0 auto;
+  /* margin-right: 10px; */
+}
+input{
+  width: 50%;
+  margin-bottom: 10px;
+}
+.form h1{
+  font-size: 36px;
+}
+.btn
+{
+  width: 100px;
+  margin-top: 5px;
+  height: 25px;
+  border-radius: 15px;
+}
+.whatsapp {
+  text-decoration: none;
+  text-align: justify;
+}
+.btn{
+  margin-bottom: 25px;
+}
+  @media only screen and (min-width: 700px) and (max-width: 1280px)
+  {
+    .title h1 {
+      font-size: 30px;
+    }
+    .navbar ul {
+      padding-left: 350px;
+      margin-top: 30px;
+    }
+    .navbar li {
+      padding-left: 15px;
+    }
+    li>a {
+      
+      font-weight: 600;
+      font-size: 16px;
+      color: antiquewhite;
+    }
+    .image {
+      height: 7vh;
+    }
+    .break {
+      min-height: 7vh;
+     }
+     .menubar {
+      visibility: hidden;
+     }
+     .menubar ul {
+      visibility: hidden;
+     }
+
+     #carousel {
+     width: 65%;
+     overflow: hidden;
+     margin-left: 150px;
+  
+}
+  }
+  @media only screen and (max-width: 567px) {
+    .navbar {
+      visibility: hidden;
+    }
+    
+    .menubar {
+      visibility: visible;
+      position: relative;
+      top: -230px;
+      left: 350px;
+    }
+  
+    .men {
+      position: relative;
+      right: 130px;
+      
+    }
+
+    .men li>a {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 40px;
+      color: #042c54 ;
+    }
+
+    .men ul {
+      list-style-type: none;
+      margin-top: 50px;
+      padding-left: 50px;
+    }
+    /* br= menu background */
+    .br{
+    
+      min-height: 530vh;
+      width: 60vw;
+      position: absolute;
+      left: 250px;
+      background-color: rgb(111, 111, 240) ;
+    }
+
+    #carousel {
+      width: 100%;
+      overflow: hidden;
+      margin-left: 0;
+      
+    }
+
+    .do{
+      margin-top: 15px;
+    }
+    
+    #carousel img {
+      display: block;
+      float: left;
+      width: 100%;
+    }
+    .form{
+      width: 60vw;
+    }
+    .div{
+      padding: 20px;
+      width: 85vw;
+      justify-content: center;
+    }
+
+    .wlc h1{
+      margin-top: 0px;
+      font-size: 35px;
+    }
+
+    .wlc p{
+      font-size: 15px;
+      letter-spacing: 0.05em;
+      font-weight: 100px;
+    }
+  
+  }
+
+  @media only screen and (max-width: 400px) {
+    .navbar {
+      visibility: hidden;
+    }
+    .menubar {
+      visibility: visible;
+      position: relative;
+      top: -230px;
+      left: 300px;
+    }
+    .men {
+      position: relative;
+      right: 130px;
+    }
+
+    .men li>a {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 40px;
+    }
+
+    .men ul {
+      list-style-type: none;
+    }
+    .br{
+      left:200px;
+    }
+  }
+ 
+  @media only screen and (max-width: 300px) {
+    .navbar {
+      visibility: hidden;
+    }
+    .menubar {
+      visibility: visible;
+      position: relative;
+      top: -230px;
+      left: 240px;
+    }
+    
+
+    .title {
+      padding-left: 5px;
+    }
+    .men {
+      position: relative;
+      right: 130px;
+    }
+
+    .men li>a {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 40px;
+    }
+
+    .men ul {
+      list-style-type: none;
+    }
+    .br{
+      left:150px;
+    }
+    .logs {
+      width: 40px;
+      height: 60px;
+    }
+    .title h1{
+      font-size: 23px;
+    }
+    .title p {
+      font-size: 12px;
+    }
+  }
