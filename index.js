@@ -28,19 +28,42 @@ let state = "closed";
       }, 3000);
 let btn = document.querySelector(".btn");
 btn.addEventListener('click', parser);
-{/* <a href="mailto:recipient@example.com?subject=Hello%20world&body=Hi%20there%2C%0A%0AThis%20is%20a%20test%20email.%0A%0ABest%2C%0AJohn">Send email</a> */}
 
+let y = 0;
 function parser()
 {
-  const area = document.getElementById("reason").value;
-  const fname = document.getElementById("fname").value;
-  const mname = document.getElementById("mname").value;
-  const lname = document.getElementById("lname").value;
-  const dob = document.getElementById("DOB").value;
-  const edu = document.getElementById("edu").value;
-  const add = document.getElementById("address").value;
-  const num = document.getElementById("num").value;
-
-  let str = `mailto:wisdompaul273@gmail.com?subject=New%20Message&body=First-name:%20${fname}%0AMiddle-name:%20${mname}%0ALast-name:%20${lname}%0ADOB:%20${dob}%0AEducational%20Qualification:%20${edu}%0AAddress:%20${add}%0APhone-Number:%20${num}%0AReason%20for%20consultation:%20${area}%0A`;
+  let form = document.querySelector(".form");
+  let para = document.createElement("p");
+  para.textContent =  "Please Input All Fields";
+  para.style.color = "red";
+  para.style.textAlign = "center";
+  para.style.fontSize = "25px";
+  let area = document.getElementById("reason").value;
+  let fname = document.getElementById("fname").value;
+  let mname = document.getElementById("mname").value;
+  let lname = document.getElementById("lname").value;
+  let dob = document.getElementById("DOB").value;
+  let edu = document.getElementById("edu").value;
+  let add = document.getElementById("address").value;
+  let num = document.getElementById("num").value;
+  if (area == '' || fname == '' ||  mname == '' ||  lname == '' || dob == '' || edu == '' || add == '' || num == '')
+  {
+    if (y != 0)
+    {
+      form.removeChild(para);
+      y = y-1;
+    }
+    form.appendChild(para);
+    y = y+1;
+  }
+  else{
+  // if (y != 0)
+  // {
+  //   para.textContent='';
+  //   y = 0;
+  // }
+  let str = `mailto:ejehtiger222@gmail.com?subject=New%20Message&body=First-name:%20${fname}%0AMiddle-name:%20${mname}%0ALast-name:%20${lname}%0ADOB:%20${dob}%0AEducational%20Qualification:%20${edu}%0AAddress:%20${add}%0APhone-Number:%20${num}%0AReason%20for%20consultation:%20${area}%0A`;
   window.open(str, "_blank");
+  location.reload(true);
+}
 }

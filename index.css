@@ -8,11 +8,13 @@
     padding: 0;
    }
 body {
-  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(97, 157, 226, 0.5));
-
+   background-image: url("/assests/tiger\ trans2.png");
+   background-size:cover;
+   background-attachment: fixed;
+   background-repeat:no-repeat;
   margin: 0;
   padding: 0;
-  border: 0;
+  width: 100vw;
 }
 
 .logs {
@@ -27,23 +29,24 @@ body {
   min-width: 100%;
   position: fixed;
   z-index: 1;
-  background-color: rgb(111, 111, 240) ;
+  background-color: #e0c56c;
   border-bottom: 2px solid #002060;
 }
 .title {
   padding-left: 5px;
   float: left;
-  font-size: 15px;
+  font-size: 11px;
 }
 .title h1 {
   color: #042c54;
   margin-bottom: 0;
-  margin-top: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .title p {
   color: #031B34;
   margin-top: 0;
   padding-left: 10px;
+  font-family: 'Fnklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .navbar {
   cursor: pointer;
@@ -110,12 +113,12 @@ transition: all 300ms ease;
 }
 
 .footer p{
-  margin-left: 630px;
+  margin-left: 10px;
 }
 
 
 .whatsapp{
-  margin-left: 610px;
+  margin-left: 10px;
 }
 
 /* to be done under media query   */
@@ -184,13 +187,24 @@ transition: all 300ms ease;
     font-size: 50px;
     margin-bottom: 15px;
   }
-  .wlc p {
-    color: #031B34;
+
+  .wlc li{
+    font-family:  'Arial', sans-serif;
     font-size: 18px;
-    font-weight: 500px;
+  }
+
+.choose li{
+  text-align: left;
+}
+
+  .wlc p {
+    font-weight: bolder;
+    color: black;
+    font-size: 18px;
   margin-top: 0;
   padding-left: 10px;
   text-align: left;
+  font-family:Arial, Helvetica, sans-serif;
 
   }
 .br{
@@ -206,14 +220,21 @@ transition: all 300ms ease;
 label {
   display: block;
   margin: 0 auto 0 auto;
-  /* margin-right: 10px; */
+  font-weight: bolder;
 }
+
 input{
   width: 50%;
   margin-bottom: 10px;
 }
+
 .form h1{
   font-size: 36px;
+}
+textarea{
+  padding: 0;
+  margin-left: 0;
+  text-align: start;
 }
 .btn
 {
@@ -226,13 +247,30 @@ input{
   text-decoration: none;
   text-align: justify;
 }
+
+.whatsapp p2{
+  font-family: 'Times New Roman', Times, serif;
+}
+.down{
+  margin-top: 0;
+  padding-top: 0;
+}
+.up{
+  margin-top: 10px;
+}
+
 .btn{
   margin-bottom: 25px;
+}
+.div{
+  /* background-image: url("/assests/tiger trans.png"); */
+  background-image: linear-gradient(rgba(207,181,59, 0.5) , rgba(218, 125, 59, 0.5) );
+  min-height: 100vh;
 }
   @media only screen and (min-width: 700px) and (max-width: 1280px)
   {
     .title h1 {
-      font-size: 30px;
+      font-size: 14px;
     }
     .navbar ul {
       padding-left: 350px;
@@ -260,14 +298,19 @@ input{
       visibility: hidden;
      }
 
+     .image{
+      height:10vh;
+     }
      #carousel {
      width: 65%;
      overflow: hidden;
      margin-left: 150px;
-  
-}
   }
+}
   @media only screen and (max-width: 567px) {
+    body {
+      background-size:contain;
+    }
     .navbar {
       visibility: hidden;
     }
@@ -275,13 +318,13 @@ input{
     .menubar {
       visibility: visible;
       position: relative;
-      top: -230px;
+      top: -250px;
       left: 350px;
     }
   
     .men {
       position: relative;
-      right: 130px;
+      right: 85px;
       
     }
 
@@ -300,11 +343,12 @@ input{
     /* br= menu background */
     .br{
     
-      min-height: 530vh;
-      width: 60vw;
+      min-height: 540vh;
+      width: 40vw;
       position: absolute;
-      left: 250px;
-      background-color: rgb(111, 111, 240) ;
+      top: 20px;
+      left: 300px;
+      background-color: #e0c56c ;
     }
 
     #carousel {
@@ -328,7 +372,8 @@ input{
     }
     .div{
       padding: 20px;
-      width: 85vw;
+      width: 100vw;
+      min-height: 100vh;
       justify-content: center;
     }
 
@@ -340,7 +385,8 @@ input{
     .wlc p{
       font-size: 15px;
       letter-spacing: 0.05em;
-      font-weight: 100px;
+      font-weight: bolder;
+      color: black;
     }
   
   }
@@ -352,12 +398,74 @@ input{
     .menubar {
       visibility: visible;
       position: relative;
-      top: -230px;
-      left: 300px;
+      top: -260px;
+      left: 310px;
     }
     .men {
       position: relative;
-      right: 130px;
+      right: 70px;
+    }
+
+    .men li>a {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 40px;
+    }
+
+    .men ul {
+      list-style-type: none;
+    }
+    .br{
+      left:265px;
+    }
+    .title{
+      font-size: 12px;
+    }
+  }
+ 
+  
+  @media only screen and (min-height: 600px) and (max-width:400px){
+
+    .br{
+      min-height: 750vh;
+    }
+  }
+  @media only screen and (min-height: 700px) and (max-width:400px){
+
+    .br{
+      min-height: 690vh;
+    }
+  }
+  @media only screen and (min-height: 800px) and (max-width:400px){
+
+    .br{
+      min-height: 550vh;
+    }
+  }
+  @media only screen and (min-height: 812px) and (max-width:380px){
+
+    .br{
+      min-height: 633vh;
+    }
+  }
+  @media only screen and (max-width: 300px) {
+    .navbar {
+      visibility: hidden;
+    }
+    .menubar {
+      visibility: visible;
+      position: relative;
+      top: -260px;
+      left: 240px;
+    }
+    
+
+    .title {
+      padding-left: 5px;
+    }
+    .men {
+      position: relative;
+      right: 80px;
     }
 
     .men li>a {
@@ -371,47 +479,15 @@ input{
     }
     .br{
       left:200px;
-    }
-  }
- 
-  @media only screen and (max-width: 300px) {
-    .navbar {
-      visibility: hidden;
-    }
-    .menubar {
-      visibility: visible;
-      position: relative;
-      top: -230px;
-      left: 240px;
-    }
-    
-
-    .title {
-      padding-left: 5px;
-    }
-    .men {
-      position: relative;
-      right: 130px;
-    }
-
-    .men li>a {
-      font-weight: 700;
-      font-size: 16px;
-      line-height: 40px;
-    }
-
-    .men ul {
-      list-style-type: none;
-    }
-    .br{
-      left:150px;
+      min-height: 970vh;
+      width:45vw;
     }
     .logs {
       width: 40px;
       height: 60px;
     }
     .title h1{
-      font-size: 23px;
+      font-size: 19px;
     }
     .title p {
       font-size: 12px;
