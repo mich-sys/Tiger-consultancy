@@ -317,8 +317,8 @@ textarea{
     
     .menubar {
       visibility: visible;
-      position: relative;
-      top: -250px;
+      position: fixed;
+      top: 50px;
       left: 350px;
     }
   
