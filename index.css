@@ -411,6 +411,12 @@ footer p{
      overflow: hidden;
      margin-left: 150px;
   }
+  .wlc p{
+    font-size: 15px;
+    letter-spacing: 0.05em;
+    font-weight: 400;
+    color: black;
+  }
 }
   @media only screen and (max-width: 567px) {
     body {
@@ -490,7 +496,7 @@ footer p{
     .wlc p{
       font-size: 15px;
       letter-spacing: 0.05em;
-      font-weight: 100;
+      font-weight: 400;
       color: black;
     }
   
