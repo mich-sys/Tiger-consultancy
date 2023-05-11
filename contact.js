@@ -1,32 +1,32 @@
 let state = "closed";
-      let m = document.querySelector(".men");
-      let n = document.querySelector(".br");
+      // let m = document.querySelector(".men");
+      // let n = document.querySelector(".br");
+      let t = document.querySelector(".test");
+      let list = document.getElementById("mylist");
+      let data = ['<a href = "/index.html">Home</a>', '<a href = "/services.html">Our Services</a>', '<a href = "/services.html">Products</a>', '<a href = "/about.html">About Us</a>', '<a href = "/contact.html">Contact Us</a>'];
       function myFunction(x) {
         if (state == "closed") {
-          m.style.visibility = "initial";
-          n.style.visibility = "initial";
+          // m.style.visibility = "initial";
+          // n.style.visibility = "initial";
+          t.style.visibility = "initial";
+          data.forEach((item)=>{
+            let li = document.createElement("li");
+            // li.innerText = item;
+            li.innerHTML = item;
+            list.appendChild(li);
+            li.style.listStyleType = 'none';
+          })
           state = "open";
         } else {
-          m.style.visibility = "hidden";
-          n.style.visibility = "hidden";
+          // m.style.visibility = "hidden";
+          // n.style.visibility = "hidden";
+          t.style.visibility = "hidden";
           state = "closed";
+          list.innerHTML = "";
         }
         x.classList.toggle("change");
       }
-
-      let carousel = document.getElementById("carousel");
-      let images = carousel.getElementsByTagName("img");
-      let currentIndex = 0;
-      
-      setInterval(function() {
-        images[currentIndex].style.display = "none";
-        currentIndex++;
-        if (currentIndex >= images.length) {
-          currentIndex = 0;
-        }
-        images[currentIndex].style.display = "block";
-      }, 3000);
-let btn = document.querySelector(".btn");
+      let btn = document.querySelector(".btn");
 btn.addEventListener('click', parser);
 
 let y = 0;

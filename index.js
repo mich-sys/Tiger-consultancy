@@ -3,7 +3,7 @@ let state = "closed";
       // let n = document.querySelector(".br");
       let t = document.querySelector(".test");
       let list = document.getElementById("mylist");
-      let data = ['<a href = "#">Home</a>', '<a href = "#">Our Services</a>', '<a href = "#">Products</a>', '<a href = "#">About Us</a>', '<a href = "#">Contact Us</a>'];
+      let data = ['<a href = "/index.html">Home</a>', '<a href = "/services.html">Our Services</a>', '<a href = "/services.html">Products</a>', '<a href = "/about.html">About Us</a>', '<a href = "/contact.html">Contact Us</a>'];
       function myFunction(x) {
         if (state == "closed") {
           // m.style.visibility = "initial";
