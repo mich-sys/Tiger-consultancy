@@ -30,7 +30,7 @@ body {
   min-width: 100%;
   position: fixed;
   z-index: 1;
-  background-color: #e0c56cc0;
+  background-color: #e0c56c;;
   border-bottom: 2px solid #002060;
 }
 .title {
@@ -205,8 +205,13 @@ transition: all 300ms ease;
   /* who we are */
   .wlc {
     
-    text-align: center;
+    text-align: justify;
     width: 100vw;
+  }
+  .wlc:after{
+    content: "";
+    display: inline-block;
+    width: 100%;
   }
   .wlc h1 {
     font-family: 'Cambria', Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -345,7 +350,7 @@ footer p{
   color: #e0c56c;
 }
 .contactlink{
-  background-color: #e0c56c;
+  background-color:#e0c56cc0;;
   margin: 20px;
   text-align: center;
 }
