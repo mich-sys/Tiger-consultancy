@@ -369,6 +369,12 @@ footer p{
   background-image: linear-gradient(rgba(207,181,59, 0.5) , rgba(218, 125, 59, 0.5) );
   min-height: 100vh;
 }
+.prods li{
+  font-size: 17px;
+  font-weight: 300;
+  font-family: "Lato", Arial, sans-serif;
+  margin-right: 20px;
+}
   @media only screen and (min-width: 700px) and (max-width: 1280px)
   {
     .title h1 {
