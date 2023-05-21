@@ -74,6 +74,7 @@ body {
   width: 50%;
   overflow: hidden;
   margin-left: 350px;
+  margin-top: 20px;
   
 }
 
@@ -209,6 +210,7 @@ transition: all 300ms ease;
     width: 95vw;
     margin: 0 auto 0 auto;
     background-color: #f3d881;
+    background-color: #e0c56cc0;;
   }
   .wlc:after{
     content: "";
