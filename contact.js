@@ -46,7 +46,8 @@ function parser()
   let edu = document.getElementById("edu").value;
   let add = document.getElementById("address").value;
   let num = document.getElementById("num").value;
-  if (area == '' || fname == '' ||  mname == '' ||  lname == '' || dob == '' || edu == '' || add == '' || num == '')
+  let mail = document.getElementById("mail").value;
+  if (area == '' || fname == '' ||  mname == '' ||  lname == '' || dob == '' || edu == '' || add == '' || num == '' || mail == '' )
   {
     if (y != 0)
     {
@@ -62,7 +63,7 @@ function parser()
   //   para.textContent='';
   //   y = 0;
   // }
-  let str = `mailto:ejehtiger222@gmail.com?subject=New%20Message&body=First-name:%20${fname}%0AMiddle-name:%20${mname}%0ALast-name:%20${lname}%0ADOB:%20${dob}%0AEducational%20Qualification:%20${edu}%0AAddress:%20${add}%0APhone-Number:%20${num}%0AReason%20for%20consultation:%20${area}%0A`;
+  let str = `mailto:ejehtiger222@gmail.com?subject=New%20Message&body=First-name:%20${fname}%0AMiddle-name:%20${mname}%0ALast-name:%20${lname}%0ADOB:%20${dob}%0AEducational%20Qualification:%20${edu}%0AAddress:%20${add}%0APhone-Number:%20${num}%0AE-Mail:%20${mail}%0AReason%20for%20consultation:%20${area}%0A`;
   window.open(str, "_blank");
   location.reload(true);
 }
